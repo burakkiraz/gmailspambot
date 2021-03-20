@@ -6,7 +6,7 @@ import time
 import random
 from PyQt5.QtWidgets import QApplication,QWidget,QLineEdit,QHBoxLayout,QPushButton,QVBoxLayout,QTextEdit,QLabel
 
-class Pencere(QWidget):
+class Window(QWidgt):
     def __init__(self):
         super().__init__()
         self.init_ui()
@@ -100,7 +100,7 @@ class Pencere(QWidget):
                 self.text_area.setText("There is a problem !!!")
 
 app = QApplication(sys.argv)
-pencere = Pencere()
+window = Window()
 sys.exit(app.exec())
 
 
